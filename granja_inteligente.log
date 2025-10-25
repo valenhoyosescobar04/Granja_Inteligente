@@ -1,0 +1,1060 @@
+oct 25, 2025 3:57:16 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade <init>
+INFO: 🚜 Iniciando fachada principal de la Granja Inteligente...
+oct 25, 2025 3:57:17 P. M. cue.edu.co.controladores.ControladorObserver <init>
+INFO: 🛰️ Sistema de alertas 'Alertas Generales' inicializado.
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas registrarObserver
+INFO: 🛰️ SensorObserver registrado en el sistema Alertas Generales
+oct 25, 2025 3:57:17 P. M. cue.edu.co.controladores.ControladorObserver registrarSensor
+INFO: ✅ Sensor registrado: Peso
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas registrarObserver
+INFO: 🛰️ SensorObserver registrado en el sistema Alertas Generales
+oct 25, 2025 3:57:17 P. M. cue.edu.co.controladores.ControladorObserver registrarSensor
+INFO: ✅ Sensor registrado: Temperatura
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas registrarObserver
+INFO: 🛰️ SensorObserver registrado en el sistema Alertas Generales
+oct 25, 2025 3:57:17 P. M. cue.edu.co.controladores.ControladorObserver registrarSensor
+INFO: ✅ Sensor registrado: Humedad
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade registrarSensoresPorDefecto
+INFO: ✅ Sensores registrados correctamente en el sistema de alertas.
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade ejecutarRutinaDiaria
+INFO: 🌅 Iniciando rutina diaria de la granja...
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade alimentarCorral
+INFO: 🍽️ Iniciando proceso de alimentación para Corral de Vacas
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.estructurales.facade.SubsistemaAlimentacion verificarStock
+INFO: 📦 Verificando stock de alimento...
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.estructurales.facade.SubsistemaAlimentacion distribuirAlimento
+INFO: 🍽️ Distribuyendo alimento en Corral de Vacas...
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T15:57:17.059819100] Alimentación: Se alimentó el corral: Corral de Vacas
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T15:57:17.059819100] Alimentación: Se alimentó el corral: Corral de Vacas
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T15:57:17.059819100] Alimentación: Se alimentó el corral: Corral de Vacas
+oct 25, 2025 3:57:17 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T15:57:17.059819100] Alimentación: Se alimentó el corral: Corral de Vacas
+oct 25, 2025 3:57:17 P. M. cue.edu.co.servicios.ServicioMonitoreo generarAlerta
+WARNING: 🚨 Alerta generada manualmente: Alimentación - Se alimentó el corral: Corral de Vacas
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade alimentarCorral
+INFO: ✅ Alimentación del Corral de Vacas completada.
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade activarRiego
+INFO: 💧 Solicitando activación de riego en Zona Norte
+oct 25, 2025 3:57:17 P. M. cue.edu.co.servicios.ServicioRiego activarRiego
+INFO: 💦 Riego activado en la zona: Zona Norte
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T15:57:17.075823100] Riego: El riego fue activado en Zona Norte
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T15:57:17.075823100] Riego: El riego fue activado en Zona Norte
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T15:57:17.075823100] Riego: El riego fue activado en Zona Norte
+oct 25, 2025 3:57:17 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T15:57:17.075823100] Riego: El riego fue activado en Zona Norte
+oct 25, 2025 3:57:17 P. M. cue.edu.co.servicios.ServicioMonitoreo generarAlerta
+WARNING: 🚨 Alerta generada manualmente: Riego - El riego fue activado en Zona Norte
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade activarRiego
+INFO: ✅ Riego activado en Zona Norte
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade monitorearSensores
+INFO: 📡 Iniciando monitoreo general de sensores...
+oct 25, 2025 3:57:17 P. M. cue.edu.co.servicios.ServicioMonitoreo revisarSensores
+INFO: 👀 Ejecutando revisión general de sensores...
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T15:57:17.079819300] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T15:57:17.079819300] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T15:57:17.079819300] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 3:57:17 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T15:57:17.079819300] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 3:57:17 P. M. cue.edu.co.servicios.ServicioMonitoreo mostrarEstadoSensores
+INFO: 📊 Consultando estado de sensores registrados...
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade monitorearSensores
+INFO: ✅ Monitoreo general completado.
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade desactivarRiego
+INFO: 🌤️ Solicitando desactivación de riego en Zona Norte
+oct 25, 2025 3:57:17 P. M. cue.edu.co.servicios.ServicioRiego desactivarRiego
+INFO: 🌤️ Riego desactivado en la zona: Zona Norte
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T15:57:17.083822500] Riego: El riego fue desactivado en Zona Norte
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T15:57:17.083822500] Riego: El riego fue desactivado en Zona Norte
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T15:57:17.083822500] Riego: El riego fue desactivado en Zona Norte
+oct 25, 2025 3:57:17 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T15:57:17.083822500] Riego: El riego fue desactivado en Zona Norte
+oct 25, 2025 3:57:17 P. M. cue.edu.co.servicios.ServicioMonitoreo generarAlerta
+WARNING: 🚨 Alerta generada manualmente: Riego - El riego fue desactivado en Zona Norte
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade desactivarRiego
+INFO: ✅ Riego desactivado en Zona Norte
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade ejecutarRutinaDiaria
+INFO: 🌇 Rutina diaria finalizada correctamente.
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade generarAlertaManual
+INFO: ⚠️ Generando alerta manual: [Temperatura] Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T15:57:17.087820200] Temperatura: Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T15:57:17.087820200] Temperatura: Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T15:57:17.087820200] Temperatura: Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 3:57:17 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T15:57:17.087820200] Temperatura: Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 3:57:17 P. M. cue.edu.co.servicios.ServicioMonitoreo generarAlerta
+WARNING: 🚨 Alerta generada manualmente: Temperatura - Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade generarAlertaManual
+INFO: ✅ Alerta manual procesada.
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade monitorearSensores
+INFO: 📡 Iniciando monitoreo general de sensores...
+oct 25, 2025 3:57:17 P. M. cue.edu.co.servicios.ServicioMonitoreo revisarSensores
+INFO: 👀 Ejecutando revisión general de sensores...
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T15:57:17.091821800] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T15:57:17.091821800] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T15:57:17.091821800] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 3:57:17 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T15:57:17.091821800] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 3:57:17 P. M. cue.edu.co.servicios.ServicioMonitoreo mostrarEstadoSensores
+INFO: 📊 Consultando estado de sensores registrados...
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade monitorearSensores
+INFO: ✅ Monitoreo general completado.
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade <init>
+INFO: 🚜 Iniciando fachada principal de la Granja Inteligente...
+oct 25, 2025 3:57:17 P. M. cue.edu.co.controladores.ControladorObserver <init>
+INFO: 🛰️ Sistema de alertas 'Alertas Generales' inicializado.
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas registrarObserver
+INFO: 🛰️ SensorObserver registrado en el sistema Alertas Generales
+oct 25, 2025 3:57:17 P. M. cue.edu.co.controladores.ControladorObserver registrarSensor
+INFO: ✅ Sensor registrado: Peso
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas registrarObserver
+INFO: 🛰️ SensorObserver registrado en el sistema Alertas Generales
+oct 25, 2025 3:57:17 P. M. cue.edu.co.controladores.ControladorObserver registrarSensor
+INFO: ✅ Sensor registrado: Temperatura
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas registrarObserver
+INFO: 🛰️ SensorObserver registrado en el sistema Alertas Generales
+oct 25, 2025 3:57:17 P. M. cue.edu.co.controladores.ControladorObserver registrarSensor
+INFO: ✅ Sensor registrado: Humedad
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade registrarSensoresPorDefecto
+INFO: ✅ Sensores registrados correctamente en el sistema de alertas.
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade ejecutarRutinaDiaria
+INFO: 🌅 Iniciando rutina diaria de la granja...
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade alimentarCorral
+INFO: 🍽️ Iniciando proceso de alimentación para Corral de Vacas
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.estructurales.facade.SubsistemaAlimentacion verificarStock
+INFO: 📦 Verificando stock de alimento...
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.estructurales.facade.SubsistemaAlimentacion distribuirAlimento
+INFO: 🍽️ Distribuyendo alimento en Corral de Vacas...
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T15:57:17.836237100] Alimentación: Se alimentó el corral: Corral de Vacas
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T15:57:17.836237100] Alimentación: Se alimentó el corral: Corral de Vacas
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T15:57:17.836237100] Alimentación: Se alimentó el corral: Corral de Vacas
+oct 25, 2025 3:57:17 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T15:57:17.836237100] Alimentación: Se alimentó el corral: Corral de Vacas
+oct 25, 2025 3:57:17 P. M. cue.edu.co.servicios.ServicioMonitoreo generarAlerta
+WARNING: 🚨 Alerta generada manualmente: Alimentación - Se alimentó el corral: Corral de Vacas
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade alimentarCorral
+INFO: ✅ Alimentación del Corral de Vacas completada.
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade activarRiego
+INFO: 💧 Solicitando activación de riego en Zona Norte
+oct 25, 2025 3:57:17 P. M. cue.edu.co.servicios.ServicioRiego activarRiego
+INFO: 💦 Riego activado en la zona: Zona Norte
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T15:57:17.852235900] Riego: El riego fue activado en Zona Norte
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T15:57:17.852235900] Riego: El riego fue activado en Zona Norte
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T15:57:17.852235900] Riego: El riego fue activado en Zona Norte
+oct 25, 2025 3:57:17 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T15:57:17.852235900] Riego: El riego fue activado en Zona Norte
+oct 25, 2025 3:57:17 P. M. cue.edu.co.servicios.ServicioMonitoreo generarAlerta
+WARNING: 🚨 Alerta generada manualmente: Riego - El riego fue activado en Zona Norte
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade activarRiego
+INFO: ✅ Riego activado en Zona Norte
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade monitorearSensores
+INFO: 📡 Iniciando monitoreo general de sensores...
+oct 25, 2025 3:57:17 P. M. cue.edu.co.servicios.ServicioMonitoreo revisarSensores
+INFO: 👀 Ejecutando revisión general de sensores...
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T15:57:17.856233200] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T15:57:17.856233200] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T15:57:17.856233200] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 3:57:17 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T15:57:17.856233200] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 3:57:17 P. M. cue.edu.co.servicios.ServicioMonitoreo mostrarEstadoSensores
+INFO: 📊 Consultando estado de sensores registrados...
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade monitorearSensores
+INFO: ✅ Monitoreo general completado.
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade desactivarRiego
+INFO: 🌤️ Solicitando desactivación de riego en Zona Norte
+oct 25, 2025 3:57:17 P. M. cue.edu.co.servicios.ServicioRiego desactivarRiego
+INFO: 🌤️ Riego desactivado en la zona: Zona Norte
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T15:57:17.860235300] Riego: El riego fue desactivado en Zona Norte
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T15:57:17.860235300] Riego: El riego fue desactivado en Zona Norte
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T15:57:17.860235300] Riego: El riego fue desactivado en Zona Norte
+oct 25, 2025 3:57:17 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T15:57:17.860235300] Riego: El riego fue desactivado en Zona Norte
+oct 25, 2025 3:57:17 P. M. cue.edu.co.servicios.ServicioMonitoreo generarAlerta
+WARNING: 🚨 Alerta generada manualmente: Riego - El riego fue desactivado en Zona Norte
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade desactivarRiego
+INFO: ✅ Riego desactivado en Zona Norte
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade ejecutarRutinaDiaria
+INFO: 🌇 Rutina diaria finalizada correctamente.
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade generarAlertaManual
+INFO: ⚠️ Generando alerta manual: [Temperatura] Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T15:57:17.864237800] Temperatura: Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T15:57:17.864237800] Temperatura: Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T15:57:17.864237800] Temperatura: Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 3:57:17 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T15:57:17.864237800] Temperatura: Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 3:57:17 P. M. cue.edu.co.servicios.ServicioMonitoreo generarAlerta
+WARNING: 🚨 Alerta generada manualmente: Temperatura - Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade generarAlertaManual
+INFO: ✅ Alerta manual procesada.
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade monitorearSensores
+INFO: 📡 Iniciando monitoreo general de sensores...
+oct 25, 2025 3:57:17 P. M. cue.edu.co.servicios.ServicioMonitoreo revisarSensores
+INFO: 👀 Ejecutando revisión general de sensores...
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T15:57:17.867230600] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T15:57:17.867230600] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T15:57:17.867230600] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 3:57:17 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T15:57:17.867230600] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 3:57:17 P. M. cue.edu.co.servicios.ServicioMonitoreo mostrarEstadoSensores
+INFO: 📊 Consultando estado de sensores registrados...
+oct 25, 2025 3:57:17 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade monitorearSensores
+INFO: ✅ Monitoreo general completado.
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade <init>
+INFO: 🚜 Iniciando fachada principal de la Granja Inteligente...
+oct 25, 2025 3:57:22 P. M. cue.edu.co.controladores.ControladorObserver <init>
+INFO: 🛰️ Sistema de alertas 'Alertas Generales' inicializado.
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas registrarObserver
+INFO: 🛰️ SensorObserver registrado en el sistema Alertas Generales
+oct 25, 2025 3:57:22 P. M. cue.edu.co.controladores.ControladorObserver registrarSensor
+INFO: ✅ Sensor registrado: Peso
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas registrarObserver
+INFO: 🛰️ SensorObserver registrado en el sistema Alertas Generales
+oct 25, 2025 3:57:22 P. M. cue.edu.co.controladores.ControladorObserver registrarSensor
+INFO: ✅ Sensor registrado: Temperatura
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas registrarObserver
+INFO: 🛰️ SensorObserver registrado en el sistema Alertas Generales
+oct 25, 2025 3:57:22 P. M. cue.edu.co.controladores.ControladorObserver registrarSensor
+INFO: ✅ Sensor registrado: Humedad
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade registrarSensoresPorDefecto
+INFO: ✅ Sensores registrados correctamente en el sistema de alertas.
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade ejecutarRutinaDiaria
+INFO: 🌅 Iniciando rutina diaria de la granja...
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade alimentarCorral
+INFO: 🍽️ Iniciando proceso de alimentación para Corral de Vacas
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.estructurales.facade.SubsistemaAlimentacion verificarStock
+INFO: 📦 Verificando stock de alimento...
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.estructurales.facade.SubsistemaAlimentacion distribuirAlimento
+INFO: 🍽️ Distribuyendo alimento en Corral de Vacas...
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T15:57:22.372200300] Alimentación: Se alimentó el corral: Corral de Vacas
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T15:57:22.372200300] Alimentación: Se alimentó el corral: Corral de Vacas
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T15:57:22.372200300] Alimentación: Se alimentó el corral: Corral de Vacas
+oct 25, 2025 3:57:22 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T15:57:22.372200300] Alimentación: Se alimentó el corral: Corral de Vacas
+oct 25, 2025 3:57:22 P. M. cue.edu.co.servicios.ServicioMonitoreo generarAlerta
+WARNING: 🚨 Alerta generada manualmente: Alimentación - Se alimentó el corral: Corral de Vacas
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade alimentarCorral
+INFO: ✅ Alimentación del Corral de Vacas completada.
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade activarRiego
+INFO: 💧 Solicitando activación de riego en Zona Norte
+oct 25, 2025 3:57:22 P. M. cue.edu.co.servicios.ServicioRiego activarRiego
+INFO: 💦 Riego activado en la zona: Zona Norte
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T15:57:22.383202600] Riego: El riego fue activado en Zona Norte
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T15:57:22.383202600] Riego: El riego fue activado en Zona Norte
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T15:57:22.383202600] Riego: El riego fue activado en Zona Norte
+oct 25, 2025 3:57:22 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T15:57:22.383202600] Riego: El riego fue activado en Zona Norte
+oct 25, 2025 3:57:22 P. M. cue.edu.co.servicios.ServicioMonitoreo generarAlerta
+WARNING: 🚨 Alerta generada manualmente: Riego - El riego fue activado en Zona Norte
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade activarRiego
+INFO: ✅ Riego activado en Zona Norte
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade monitorearSensores
+INFO: 📡 Iniciando monitoreo general de sensores...
+oct 25, 2025 3:57:22 P. M. cue.edu.co.servicios.ServicioMonitoreo revisarSensores
+INFO: 👀 Ejecutando revisión general de sensores...
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T15:57:22.387201100] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T15:57:22.387201100] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T15:57:22.387201100] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 3:57:22 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T15:57:22.387201100] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 3:57:22 P. M. cue.edu.co.servicios.ServicioMonitoreo mostrarEstadoSensores
+INFO: 📊 Consultando estado de sensores registrados...
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade monitorearSensores
+INFO: ✅ Monitoreo general completado.
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade desactivarRiego
+INFO: 🌤️ Solicitando desactivación de riego en Zona Norte
+oct 25, 2025 3:57:22 P. M. cue.edu.co.servicios.ServicioRiego desactivarRiego
+INFO: 🌤️ Riego desactivado en la zona: Zona Norte
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T15:57:22.391199500] Riego: El riego fue desactivado en Zona Norte
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T15:57:22.391199500] Riego: El riego fue desactivado en Zona Norte
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T15:57:22.391199500] Riego: El riego fue desactivado en Zona Norte
+oct 25, 2025 3:57:22 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T15:57:22.391199500] Riego: El riego fue desactivado en Zona Norte
+oct 25, 2025 3:57:22 P. M. cue.edu.co.servicios.ServicioMonitoreo generarAlerta
+WARNING: 🚨 Alerta generada manualmente: Riego - El riego fue desactivado en Zona Norte
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade desactivarRiego
+INFO: ✅ Riego desactivado en Zona Norte
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade ejecutarRutinaDiaria
+INFO: 🌇 Rutina diaria finalizada correctamente.
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade generarAlertaManual
+INFO: ⚠️ Generando alerta manual: [Temperatura] Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T15:57:22.394199400] Temperatura: Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T15:57:22.394199400] Temperatura: Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T15:57:22.394199400] Temperatura: Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 3:57:22 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T15:57:22.394199400] Temperatura: Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 3:57:22 P. M. cue.edu.co.servicios.ServicioMonitoreo generarAlerta
+WARNING: 🚨 Alerta generada manualmente: Temperatura - Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade generarAlertaManual
+INFO: ✅ Alerta manual procesada.
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade monitorearSensores
+INFO: 📡 Iniciando monitoreo general de sensores...
+oct 25, 2025 3:57:22 P. M. cue.edu.co.servicios.ServicioMonitoreo revisarSensores
+INFO: 👀 Ejecutando revisión general de sensores...
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T15:57:22.398201100] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T15:57:22.398201100] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T15:57:22.398201100] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 3:57:22 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T15:57:22.398201100] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 3:57:22 P. M. cue.edu.co.servicios.ServicioMonitoreo mostrarEstadoSensores
+INFO: 📊 Consultando estado de sensores registrados...
+oct 25, 2025 3:57:22 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade monitorearSensores
+INFO: ✅ Monitoreo general completado.
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade <init>
+INFO: 🚜 Iniciando fachada principal de la Granja Inteligente...
+oct 25, 2025 4:00:40 P. M. cue.edu.co.controladores.ControladorObserver <init>
+INFO: 🛰️ Sistema de alertas 'Alertas Generales' inicializado.
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas registrarObserver
+INFO: 🛰️ SensorObserver registrado en el sistema Alertas Generales
+oct 25, 2025 4:00:40 P. M. cue.edu.co.controladores.ControladorObserver registrarSensor
+INFO: ✅ Sensor registrado: Peso
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas registrarObserver
+INFO: 🛰️ SensorObserver registrado en el sistema Alertas Generales
+oct 25, 2025 4:00:40 P. M. cue.edu.co.controladores.ControladorObserver registrarSensor
+INFO: ✅ Sensor registrado: Temperatura
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas registrarObserver
+INFO: 🛰️ SensorObserver registrado en el sistema Alertas Generales
+oct 25, 2025 4:00:40 P. M. cue.edu.co.controladores.ControladorObserver registrarSensor
+INFO: ✅ Sensor registrado: Humedad
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade registrarSensoresPorDefecto
+INFO: ✅ Sensores registrados correctamente en el sistema de alertas.
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade ejecutarRutinaDiaria
+INFO: 🌅 Iniciando rutina diaria de la granja...
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade alimentarCorral
+INFO: 🍽️ Iniciando proceso de alimentación para Corral de Vacas
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.estructurales.facade.SubsistemaAlimentacion verificarStock
+INFO: 📦 Verificando stock de alimento...
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.estructurales.facade.SubsistemaAlimentacion distribuirAlimento
+INFO: 🍽️ Distribuyendo alimento en Corral de Vacas...
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T16:00:40.300872600] Alimentación: Se alimentó el corral: Corral de Vacas
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T16:00:40.300872600] Alimentación: Se alimentó el corral: Corral de Vacas
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T16:00:40.300872600] Alimentación: Se alimentó el corral: Corral de Vacas
+oct 25, 2025 4:00:40 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T16:00:40.300872600] Alimentación: Se alimentó el corral: Corral de Vacas
+oct 25, 2025 4:00:40 P. M. cue.edu.co.servicios.ServicioMonitoreo generarAlerta
+WARNING: 🚨 Alerta generada manualmente: Alimentación - Se alimentó el corral: Corral de Vacas
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade alimentarCorral
+INFO: ✅ Alimentación del Corral de Vacas completada.
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade activarRiego
+INFO: 💧 Solicitando activación de riego en Zona Norte
+oct 25, 2025 4:00:40 P. M. cue.edu.co.servicios.ServicioRiego activarRiego
+INFO: 💦 Riego activado en la zona: Zona Norte
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T16:00:40.313868900] Riego: El riego fue activado en Zona Norte
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T16:00:40.313868900] Riego: El riego fue activado en Zona Norte
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T16:00:40.313868900] Riego: El riego fue activado en Zona Norte
+oct 25, 2025 4:00:40 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T16:00:40.313868900] Riego: El riego fue activado en Zona Norte
+oct 25, 2025 4:00:40 P. M. cue.edu.co.servicios.ServicioMonitoreo generarAlerta
+WARNING: 🚨 Alerta generada manualmente: Riego - El riego fue activado en Zona Norte
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade activarRiego
+INFO: ✅ Riego activado en Zona Norte
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade monitorearSensores
+INFO: 📡 Iniciando monitoreo general de sensores...
+oct 25, 2025 4:00:40 P. M. cue.edu.co.servicios.ServicioMonitoreo revisarSensores
+INFO: 👀 Ejecutando revisión general de sensores...
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T16:00:40.317870200] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T16:00:40.317870200] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T16:00:40.317870200] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:00:40 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T16:00:40.317870200] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:00:40 P. M. cue.edu.co.servicios.ServicioMonitoreo mostrarEstadoSensores
+INFO: 📊 Consultando estado de sensores registrados...
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade monitorearSensores
+INFO: ✅ Monitoreo general completado.
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade desactivarRiego
+INFO: 🌤️ Solicitando desactivación de riego en Zona Norte
+oct 25, 2025 4:00:40 P. M. cue.edu.co.servicios.ServicioRiego desactivarRiego
+INFO: 🌤️ Riego desactivado en la zona: Zona Norte
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T16:00:40.320869300] Riego: El riego fue desactivado en Zona Norte
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T16:00:40.320869300] Riego: El riego fue desactivado en Zona Norte
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T16:00:40.320869300] Riego: El riego fue desactivado en Zona Norte
+oct 25, 2025 4:00:40 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T16:00:40.320869300] Riego: El riego fue desactivado en Zona Norte
+oct 25, 2025 4:00:40 P. M. cue.edu.co.servicios.ServicioMonitoreo generarAlerta
+WARNING: 🚨 Alerta generada manualmente: Riego - El riego fue desactivado en Zona Norte
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade desactivarRiego
+INFO: ✅ Riego desactivado en Zona Norte
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade ejecutarRutinaDiaria
+INFO: 🌇 Rutina diaria finalizada correctamente.
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade generarAlertaManual
+INFO: ⚠️ Generando alerta manual: [Temperatura] Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T16:00:40.323868100] Temperatura: Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T16:00:40.323868100] Temperatura: Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T16:00:40.323868100] Temperatura: Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 4:00:40 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T16:00:40.323868100] Temperatura: Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 4:00:40 P. M. cue.edu.co.servicios.ServicioMonitoreo generarAlerta
+WARNING: 🚨 Alerta generada manualmente: Temperatura - Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade generarAlertaManual
+INFO: ✅ Alerta manual procesada.
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade monitorearSensores
+INFO: 📡 Iniciando monitoreo general de sensores...
+oct 25, 2025 4:00:40 P. M. cue.edu.co.servicios.ServicioMonitoreo revisarSensores
+INFO: 👀 Ejecutando revisión general de sensores...
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T16:00:40.326869600] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T16:00:40.326869600] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T16:00:40.326869600] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:00:40 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T16:00:40.326869600] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:00:40 P. M. cue.edu.co.servicios.ServicioMonitoreo mostrarEstadoSensores
+INFO: 📊 Consultando estado de sensores registrados...
+oct 25, 2025 4:00:40 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade monitorearSensores
+INFO: ✅ Monitoreo general completado.
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade <init>
+INFO: 🚜 Iniciando fachada principal de la Granja Inteligente...
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas <init>
+INFO: 🛰️ Sistema de alertas 'Alertas Generales' inicializado correctamente.
+oct 25, 2025 4:28:52 P. M. cue.edu.co.controladores.ControladorObserver <init>
+INFO: 🛰️ Sistema de alertas 'Alertas Generales' inicializado.
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas registrarObserver
+INFO: 🛰️ SensorObserver registrado en el sistema Alertas Generales
+oct 25, 2025 4:28:52 P. M. cue.edu.co.controladores.ControladorObserver registrarSensor
+INFO: ✅ Sensor registrado: Peso
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas registrarObserver
+INFO: 🛰️ SensorObserver registrado en el sistema Alertas Generales
+oct 25, 2025 4:28:52 P. M. cue.edu.co.controladores.ControladorObserver registrarSensor
+INFO: ✅ Sensor registrado: Temperatura
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas registrarObserver
+INFO: 🛰️ SensorObserver registrado en el sistema Alertas Generales
+oct 25, 2025 4:28:52 P. M. cue.edu.co.controladores.ControladorObserver registrarSensor
+INFO: ✅ Sensor registrado: Humedad
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade registrarSensoresPorDefecto
+INFO: ✅ Sensores registrados correctamente en el sistema de alertas.
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade ejecutarRutinaDiaria
+INFO: 🌅 Iniciando rutina diaria de la granja...
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade alimentarCorral
+INFO: 🍽️ Iniciando proceso de alimentación para Corral de Vacas
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.estructurales.facade.SubsistemaAlimentacion verificarStock
+INFO: 📦 Verificando stock de alimento...
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.estructurales.facade.SubsistemaAlimentacion distribuirAlimento
+INFO: 🍽️ Distribuyendo alimento en Corral de Vacas...
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T16:28:52.843603300] Alimentación: Se alimentó el corral: Corral de Vacas
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T16:28:52.843603300] Alimentación: Se alimentó el corral: Corral de Vacas
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T16:28:52.843603300] Alimentación: Se alimentó el corral: Corral de Vacas
+oct 25, 2025 4:28:52 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T16:28:52.843603300] Alimentación: Se alimentó el corral: Corral de Vacas
+oct 25, 2025 4:28:52 P. M. cue.edu.co.servicios.ServicioMonitoreo generarAlerta
+WARNING: 🚨 Alerta generada manualmente: Alimentación - Se alimentó el corral: Corral de Vacas
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade alimentarCorral
+INFO: ✅ Alimentación del Corral de Vacas completada.
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade activarRiego
+INFO: 💧 Solicitando activación de riego en Zona Norte
+oct 25, 2025 4:28:52 P. M. cue.edu.co.servicios.ServicioRiego activarRiego
+INFO: 💦 Riego activado en la zona: Zona Norte
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T16:28:52.858602800] Riego: El riego fue activado en Zona Norte
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T16:28:52.858602800] Riego: El riego fue activado en Zona Norte
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T16:28:52.858602800] Riego: El riego fue activado en Zona Norte
+oct 25, 2025 4:28:52 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T16:28:52.858602800] Riego: El riego fue activado en Zona Norte
+oct 25, 2025 4:28:52 P. M. cue.edu.co.servicios.ServicioMonitoreo generarAlerta
+WARNING: 🚨 Alerta generada manualmente: Riego - El riego fue activado en Zona Norte
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade activarRiego
+INFO: ✅ Riego activado en Zona Norte
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade monitorearSensores
+INFO: 📡 Iniciando monitoreo general de sensores...
+oct 25, 2025 4:28:52 P. M. cue.edu.co.servicios.ServicioMonitoreo revisarSensores
+INFO: 👀 Ejecutando revisión general de sensores...
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T16:28:52.863596900] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T16:28:52.863596900] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T16:28:52.863596900] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:28:52 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T16:28:52.863596900] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:28:52 P. M. cue.edu.co.servicios.ServicioMonitoreo mostrarEstadoSensores
+INFO: 📊 Consultando estado de sensores registrados...
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade monitorearSensores
+INFO: ✅ Monitoreo general completado.
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade desactivarRiego
+INFO: 🌤️ Solicitando desactivación de riego en Zona Norte
+oct 25, 2025 4:28:52 P. M. cue.edu.co.servicios.ServicioRiego desactivarRiego
+INFO: 🌤️ Riego desactivado en la zona: Zona Norte
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T16:28:52.867594200] Riego: El riego fue desactivado en Zona Norte
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T16:28:52.867594200] Riego: El riego fue desactivado en Zona Norte
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T16:28:52.867594200] Riego: El riego fue desactivado en Zona Norte
+oct 25, 2025 4:28:52 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T16:28:52.867594200] Riego: El riego fue desactivado en Zona Norte
+oct 25, 2025 4:28:52 P. M. cue.edu.co.servicios.ServicioMonitoreo generarAlerta
+WARNING: 🚨 Alerta generada manualmente: Riego - El riego fue desactivado en Zona Norte
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade desactivarRiego
+INFO: ✅ Riego desactivado en Zona Norte
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade ejecutarRutinaDiaria
+INFO: 🌇 Rutina diaria finalizada correctamente.
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade generarAlertaManual
+INFO: ⚠️ Generando alerta manual: [Temperatura] Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T16:28:52.870597100] Temperatura: Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T16:28:52.870597100] Temperatura: Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T16:28:52.870597100] Temperatura: Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 4:28:52 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T16:28:52.870597100] Temperatura: Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 4:28:52 P. M. cue.edu.co.servicios.ServicioMonitoreo generarAlerta
+WARNING: 🚨 Alerta generada manualmente: Temperatura - Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade generarAlertaManual
+INFO: ✅ Alerta manual procesada.
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade monitorearSensores
+INFO: 📡 Iniciando monitoreo general de sensores...
+oct 25, 2025 4:28:52 P. M. cue.edu.co.servicios.ServicioMonitoreo revisarSensores
+INFO: 👀 Ejecutando revisión general de sensores...
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T16:28:52.874595700] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T16:28:52.874595700] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T16:28:52.874595700] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:28:52 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T16:28:52.874595700] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:28:52 P. M. cue.edu.co.servicios.ServicioMonitoreo mostrarEstadoSensores
+INFO: 📊 Consultando estado de sensores registrados...
+oct 25, 2025 4:28:52 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade monitorearSensores
+INFO: ✅ Monitoreo general completado.
+oct 25, 2025 4:32:26 P. M. cue.edu.co.app.MainGranja main
+INFO: 🐓 --- SIMULACIÓN GRANJA INTELIGENTE ---
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade <init>
+INFO: 🚜 Iniciando fachada principal de la Granja Inteligente...
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas <init>
+INFO: 🛰️ Sistema de alertas 'Alertas Generales' inicializado correctamente.
+oct 25, 2025 4:32:27 P. M. cue.edu.co.controladores.ControladorObserver <init>
+INFO: 🛰️ Sistema de alertas 'Alertas Generales' inicializado.
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas registrarObserver
+INFO: 🛰️ SensorObserver registrado en el sistema Alertas Generales
+oct 25, 2025 4:32:27 P. M. cue.edu.co.controladores.ControladorObserver registrarSensor
+INFO: ✅ Sensor registrado: Peso
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas registrarObserver
+INFO: 🛰️ SensorObserver registrado en el sistema Alertas Generales
+oct 25, 2025 4:32:27 P. M. cue.edu.co.controladores.ControladorObserver registrarSensor
+INFO: ✅ Sensor registrado: Temperatura
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas registrarObserver
+INFO: 🛰️ SensorObserver registrado en el sistema Alertas Generales
+oct 25, 2025 4:32:27 P. M. cue.edu.co.controladores.ControladorObserver registrarSensor
+INFO: ✅ Sensor registrado: Humedad
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade registrarSensoresPorDefecto
+INFO: ✅ Sensores registrados correctamente en el sistema de alertas.
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade ejecutarRutinaDiaria
+INFO: 🌅 Iniciando rutina diaria de la granja...
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade alimentarCorral
+INFO: 🍽️ Iniciando proceso de alimentación para Corral de Vacas
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.estructurales.facade.SubsistemaAlimentacion verificarStock
+INFO: 📦 Verificando stock de alimento...
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.estructurales.facade.SubsistemaAlimentacion distribuirAlimento
+INFO: 🍽️ Distribuyendo alimento en Corral de Vacas...
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T16:32:27.066020800] Alimentación: Se alimentó el corral: Corral de Vacas
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T16:32:27.066020800] Alimentación: Se alimentó el corral: Corral de Vacas
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T16:32:27.066020800] Alimentación: Se alimentó el corral: Corral de Vacas
+oct 25, 2025 4:32:27 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T16:32:27.066020800] Alimentación: Se alimentó el corral: Corral de Vacas
+oct 25, 2025 4:32:27 P. M. cue.edu.co.servicios.ServicioMonitoreo generarAlerta
+WARNING: 🚨 Alerta generada manualmente: Alimentación - Se alimentó el corral: Corral de Vacas
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade alimentarCorral
+INFO: ✅ Alimentación del Corral de Vacas completada.
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade activarRiego
+INFO: 💧 Solicitando activación de riego en Zona Norte
+oct 25, 2025 4:32:27 P. M. cue.edu.co.servicios.ServicioRiego activarRiego
+INFO: 💦 Riego activado en la zona: Zona Norte
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T16:32:27.078023500] Riego: El riego fue activado en Zona Norte
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T16:32:27.078023500] Riego: El riego fue activado en Zona Norte
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T16:32:27.078023500] Riego: El riego fue activado en Zona Norte
+oct 25, 2025 4:32:27 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T16:32:27.078023500] Riego: El riego fue activado en Zona Norte
+oct 25, 2025 4:32:27 P. M. cue.edu.co.servicios.ServicioMonitoreo generarAlerta
+WARNING: 🚨 Alerta generada manualmente: Riego - El riego fue activado en Zona Norte
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade activarRiego
+INFO: ✅ Riego activado en Zona Norte
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade monitorearSensores
+INFO: 📡 Iniciando monitoreo general de sensores...
+oct 25, 2025 4:32:27 P. M. cue.edu.co.servicios.ServicioMonitoreo revisarSensores
+INFO: 👀 Ejecutando revisión general de sensores...
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T16:32:27.082023200] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T16:32:27.082023200] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T16:32:27.082023200] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:32:27 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T16:32:27.082023200] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:32:27 P. M. cue.edu.co.servicios.ServicioMonitoreo mostrarEstadoSensores
+INFO: 📊 Consultando estado de sensores registrados...
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade monitorearSensores
+INFO: ✅ Monitoreo general completado.
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade desactivarRiego
+INFO: 🌤️ Solicitando desactivación de riego en Zona Norte
+oct 25, 2025 4:32:27 P. M. cue.edu.co.servicios.ServicioRiego desactivarRiego
+INFO: 🌤️ Riego desactivado en la zona: Zona Norte
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T16:32:27.085023400] Riego: El riego fue desactivado en Zona Norte
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T16:32:27.085023400] Riego: El riego fue desactivado en Zona Norte
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T16:32:27.085023400] Riego: El riego fue desactivado en Zona Norte
+oct 25, 2025 4:32:27 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T16:32:27.085023400] Riego: El riego fue desactivado en Zona Norte
+oct 25, 2025 4:32:27 P. M. cue.edu.co.servicios.ServicioMonitoreo generarAlerta
+WARNING: 🚨 Alerta generada manualmente: Riego - El riego fue desactivado en Zona Norte
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade desactivarRiego
+INFO: ✅ Riego desactivado en Zona Norte
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade ejecutarRutinaDiaria
+INFO: 🌇 Rutina diaria finalizada correctamente.
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade generarAlertaManual
+INFO: ⚠️ Generando alerta manual: [Temperatura] Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T16:32:27.089025200] Temperatura: Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T16:32:27.089025200] Temperatura: Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T16:32:27.089025200] Temperatura: Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 4:32:27 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T16:32:27.089025200] Temperatura: Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 4:32:27 P. M. cue.edu.co.servicios.ServicioMonitoreo generarAlerta
+WARNING: 🚨 Alerta generada manualmente: Temperatura - Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade generarAlertaManual
+INFO: ✅ Alerta manual procesada.
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade monitorearSensores
+INFO: 📡 Iniciando monitoreo general de sensores...
+oct 25, 2025 4:32:27 P. M. cue.edu.co.servicios.ServicioMonitoreo revisarSensores
+INFO: 👀 Ejecutando revisión general de sensores...
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T16:32:27.093026100] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T16:32:27.093026100] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T16:32:27.093026100] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:32:27 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T16:32:27.093026100] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:32:27 P. M. cue.edu.co.servicios.ServicioMonitoreo mostrarEstadoSensores
+INFO: 📊 Consultando estado de sensores registrados...
+oct 25, 2025 4:32:27 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade monitorearSensores
+INFO: ✅ Monitoreo general completado.
+oct 25, 2025 4:32:27 P. M. cue.edu.co.app.MainGranja main
+INFO: ✅ --- SIMULACIÓN COMPLETADA ---
+oct 25, 2025 4:47:33 P. M. cue.edu.co.app.MainGranja main
+INFO: 🐓 --- SIMULACIÓN GRANJA INTELIGENTE ---
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade <init>
+INFO: 🚜 Iniciando fachada principal de la Granja Inteligente...
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas <init>
+INFO: 🛰️ Sistema de alertas 'Alertas Generales' inicializado correctamente.
+oct 25, 2025 4:47:33 P. M. cue.edu.co.controladores.ControladorObserver <init>
+INFO: 🛰️ Sistema de alertas 'Alertas Generales' inicializado.
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas registrarObserver
+INFO: 🛰️ SensorObserver registrado en el sistema Alertas Generales
+oct 25, 2025 4:47:33 P. M. cue.edu.co.controladores.ControladorObserver registrarSensor
+INFO: ✅ Sensor registrado: Peso
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas registrarObserver
+INFO: 🛰️ SensorObserver registrado en el sistema Alertas Generales
+oct 25, 2025 4:47:33 P. M. cue.edu.co.controladores.ControladorObserver registrarSensor
+INFO: ✅ Sensor registrado: Temperatura
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas registrarObserver
+INFO: 🛰️ SensorObserver registrado en el sistema Alertas Generales
+oct 25, 2025 4:47:33 P. M. cue.edu.co.controladores.ControladorObserver registrarSensor
+INFO: ✅ Sensor registrado: Humedad
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade registrarSensoresPorDefecto
+INFO: ✅ Sensores registrados correctamente en el sistema de alertas.
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade ejecutarRutinaDiaria
+INFO: 🌅 Iniciando rutina diaria de la granja...
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade alimentarCorral
+INFO: 🍽️ Iniciando proceso de alimentación para Corral de Vacas
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.estructurales.facade.SubsistemaAlimentacion verificarStock
+INFO: 📦 Verificando stock de alimento...
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.estructurales.facade.SubsistemaAlimentacion distribuirAlimento
+INFO: 🍽️ Distribuyendo alimento en Corral de Vacas...
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T16:47:33.259946200] Alimentación: Se alimentó el corral: Corral de Vacas
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T16:47:33.259946200] Alimentación: Se alimentó el corral: Corral de Vacas
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T16:47:33.259946200] Alimentación: Se alimentó el corral: Corral de Vacas
+oct 25, 2025 4:47:33 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T16:47:33.259946200] Alimentación: Se alimentó el corral: Corral de Vacas
+oct 25, 2025 4:47:33 P. M. cue.edu.co.servicios.ServicioMonitoreo generarAlerta
+WARNING: 🚨 Alerta generada manualmente: Alimentación - Se alimentó el corral: Corral de Vacas
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade alimentarCorral
+INFO: ✅ Alimentación del Corral de Vacas completada.
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade activarRiego
+INFO: 💧 Solicitando activación de riego en Zona Norte
+oct 25, 2025 4:47:33 P. M. cue.edu.co.servicios.ServicioRiego activarRiego
+INFO: 💦 Riego activado en la zona: Zona Norte
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T16:47:33.269945900] Riego: El riego fue activado en Zona Norte
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T16:47:33.269945900] Riego: El riego fue activado en Zona Norte
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T16:47:33.269945900] Riego: El riego fue activado en Zona Norte
+oct 25, 2025 4:47:33 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T16:47:33.269945900] Riego: El riego fue activado en Zona Norte
+oct 25, 2025 4:47:33 P. M. cue.edu.co.servicios.ServicioMonitoreo generarAlerta
+WARNING: 🚨 Alerta generada manualmente: Riego - El riego fue activado en Zona Norte
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade activarRiego
+INFO: ✅ Riego activado en Zona Norte
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade monitorearSensores
+INFO: 📡 Iniciando monitoreo general de sensores...
+oct 25, 2025 4:47:33 P. M. cue.edu.co.servicios.ServicioMonitoreo revisarSensores
+INFO: 👀 Ejecutando revisión general de sensores...
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T16:47:33.273943500] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T16:47:33.273943500] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T16:47:33.273943500] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:47:33 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T16:47:33.273943500] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:47:33 P. M. cue.edu.co.servicios.ServicioMonitoreo mostrarEstadoSensores
+INFO: 📊 Consultando estado de sensores registrados...
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade monitorearSensores
+INFO: ✅ Monitoreo general completado.
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade desactivarRiego
+INFO: 🌤️ Solicitando desactivación de riego en Zona Norte
+oct 25, 2025 4:47:33 P. M. cue.edu.co.servicios.ServicioRiego desactivarRiego
+INFO: 🌤️ Riego desactivado en la zona: Zona Norte
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T16:47:33.276946200] Riego: El riego fue desactivado en Zona Norte
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T16:47:33.276946200] Riego: El riego fue desactivado en Zona Norte
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T16:47:33.276946200] Riego: El riego fue desactivado en Zona Norte
+oct 25, 2025 4:47:33 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T16:47:33.276946200] Riego: El riego fue desactivado en Zona Norte
+oct 25, 2025 4:47:33 P. M. cue.edu.co.servicios.ServicioMonitoreo generarAlerta
+WARNING: 🚨 Alerta generada manualmente: Riego - El riego fue desactivado en Zona Norte
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade desactivarRiego
+INFO: ✅ Riego desactivado en Zona Norte
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade ejecutarRutinaDiaria
+INFO: 🌇 Rutina diaria finalizada correctamente.
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade generarAlertaManual
+INFO: ⚠️ Generando alerta manual: [Temperatura] Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T16:47:33.279945100] Temperatura: Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T16:47:33.279945100] Temperatura: Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T16:47:33.279945100] Temperatura: Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 4:47:33 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T16:47:33.279945100] Temperatura: Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 4:47:33 P. M. cue.edu.co.servicios.ServicioMonitoreo generarAlerta
+WARNING: 🚨 Alerta generada manualmente: Temperatura - Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade generarAlertaManual
+INFO: ✅ Alerta manual procesada.
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade monitorearSensores
+INFO: 📡 Iniciando monitoreo general de sensores...
+oct 25, 2025 4:47:33 P. M. cue.edu.co.servicios.ServicioMonitoreo revisarSensores
+INFO: 👀 Ejecutando revisión general de sensores...
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T16:47:33.282945400] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T16:47:33.282945400] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T16:47:33.282945400] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:47:33 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T16:47:33.282945400] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:47:33 P. M. cue.edu.co.servicios.ServicioMonitoreo mostrarEstadoSensores
+INFO: 📊 Consultando estado de sensores registrados...
+oct 25, 2025 4:47:33 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade monitorearSensores
+INFO: ✅ Monitoreo general completado.
+oct 25, 2025 4:47:33 P. M. cue.edu.co.app.MainGranja main
+INFO: ✅ --- SIMULACIÓN COMPLETADA ---
+oct 25, 2025 4:53:10 P. M. cue.edu.co.app.MainGranja main
+INFO: 🐓 --- SIMULACIÓN GRANJA INTELIGENTE ---
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade <init>
+INFO: 🚜 Iniciando fachada principal de la Granja Inteligente...
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas <init>
+INFO: 🛰️ Sistema de alertas 'Alertas Generales' inicializado correctamente.
+oct 25, 2025 4:53:10 P. M. cue.edu.co.controladores.ControladorObserver <init>
+INFO: 🛰️ Sistema de alertas 'Alertas Generales' inicializado.
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas registrarObserver
+INFO: 🛰️ SensorObserver registrado en el sistema Alertas Generales
+oct 25, 2025 4:53:10 P. M. cue.edu.co.controladores.ControladorObserver registrarSensor
+INFO: ✅ Sensor registrado: Peso
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas registrarObserver
+INFO: 🛰️ SensorObserver registrado en el sistema Alertas Generales
+oct 25, 2025 4:53:10 P. M. cue.edu.co.controladores.ControladorObserver registrarSensor
+INFO: ✅ Sensor registrado: Temperatura
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas registrarObserver
+INFO: 🛰️ SensorObserver registrado en el sistema Alertas Generales
+oct 25, 2025 4:53:10 P. M. cue.edu.co.controladores.ControladorObserver registrarSensor
+INFO: ✅ Sensor registrado: Humedad
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade registrarSensoresPorDefecto
+INFO: ✅ Sensores registrados correctamente en el sistema de alertas.
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade ejecutarRutinaDiaria
+INFO: 🌅 Iniciando rutina diaria de la granja...
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade alimentarCorral
+INFO: 🍽️ Iniciando proceso de alimentación para Corral de Vacas
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.estructurales.facade.SubsistemaAlimentacion verificarStock
+INFO: 📦 Verificando stock de alimento...
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.estructurales.facade.SubsistemaAlimentacion distribuirAlimento
+INFO: 🍽️ Distribuyendo alimento en Corral de Vacas...
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T16:53:10.385672700] Alimentación: Se alimentó el corral: Corral de Vacas
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T16:53:10.385672700] Alimentación: Se alimentó el corral: Corral de Vacas
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T16:53:10.385672700] Alimentación: Se alimentó el corral: Corral de Vacas
+oct 25, 2025 4:53:10 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T16:53:10.385672700] Alimentación: Se alimentó el corral: Corral de Vacas
+oct 25, 2025 4:53:10 P. M. cue.edu.co.servicios.ServicioMonitoreo generarAlerta
+WARNING: 🚨 Alerta generada manualmente: Alimentación - Se alimentó el corral: Corral de Vacas
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade alimentarCorral
+INFO: ✅ Alimentación del Corral de Vacas completada.
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade activarRiego
+INFO: 💧 Solicitando activación de riego en Zona Norte
+oct 25, 2025 4:53:10 P. M. cue.edu.co.servicios.ServicioRiego activarRiego
+INFO: 💦 Riego activado en la zona: Zona Norte
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T16:53:10.400674700] Riego: El riego fue activado en Zona Norte
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T16:53:10.400674700] Riego: El riego fue activado en Zona Norte
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T16:53:10.400674700] Riego: El riego fue activado en Zona Norte
+oct 25, 2025 4:53:10 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T16:53:10.400674700] Riego: El riego fue activado en Zona Norte
+oct 25, 2025 4:53:10 P. M. cue.edu.co.servicios.ServicioMonitoreo generarAlerta
+WARNING: 🚨 Alerta generada manualmente: Riego - El riego fue activado en Zona Norte
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade activarRiego
+INFO: ✅ Riego activado en Zona Norte
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade monitorearSensores
+INFO: 📡 Iniciando monitoreo general de sensores...
+oct 25, 2025 4:53:10 P. M. cue.edu.co.servicios.ServicioMonitoreo revisarSensores
+INFO: 👀 Ejecutando revisión general de sensores...
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T16:53:10.403674300] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T16:53:10.403674300] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T16:53:10.403674300] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:53:10 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T16:53:10.403674300] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:53:10 P. M. cue.edu.co.servicios.ServicioMonitoreo mostrarEstadoSensores
+INFO: 📊 Consultando estado de sensores registrados...
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade monitorearSensores
+INFO: ✅ Monitoreo general completado.
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade desactivarRiego
+INFO: 🌤️ Solicitando desactivación de riego en Zona Norte
+oct 25, 2025 4:53:10 P. M. cue.edu.co.servicios.ServicioRiego desactivarRiego
+INFO: 🌤️ Riego desactivado en la zona: Zona Norte
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T16:53:10.407674800] Riego: El riego fue desactivado en Zona Norte
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T16:53:10.407674800] Riego: El riego fue desactivado en Zona Norte
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T16:53:10.407674800] Riego: El riego fue desactivado en Zona Norte
+oct 25, 2025 4:53:10 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T16:53:10.407674800] Riego: El riego fue desactivado en Zona Norte
+oct 25, 2025 4:53:10 P. M. cue.edu.co.servicios.ServicioMonitoreo generarAlerta
+WARNING: 🚨 Alerta generada manualmente: Riego - El riego fue desactivado en Zona Norte
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade desactivarRiego
+INFO: ✅ Riego desactivado en Zona Norte
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade ejecutarRutinaDiaria
+INFO: 🌇 Rutina diaria finalizada correctamente.
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade generarAlertaManual
+INFO: ⚠️ Generando alerta manual: [Temperatura] Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T16:53:10.410672500] Temperatura: Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T16:53:10.410672500] Temperatura: Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T16:53:10.410672500] Temperatura: Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 4:53:10 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T16:53:10.410672500] Temperatura: Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 4:53:10 P. M. cue.edu.co.servicios.ServicioMonitoreo generarAlerta
+WARNING: 🚨 Alerta generada manualmente: Temperatura - Sensor marcó 39°C en corral de ovejas
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade generarAlertaManual
+INFO: ✅ Alerta manual procesada.
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade monitorearSensores
+INFO: 📡 Iniciando monitoreo general de sensores...
+oct 25, 2025 4:53:10 P. M. cue.edu.co.servicios.ServicioMonitoreo revisarSensores
+INFO: 👀 Ejecutando revisión general de sensores...
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-25T16:53:10.414675200] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-25T16:53:10.414675200] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-25T16:53:10.414675200] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:53:10 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-25T16:53:10.414675200] Monitoreo: Revisión general del sistema completada.
+oct 25, 2025 4:53:10 P. M. cue.edu.co.servicios.ServicioMonitoreo mostrarEstadoSensores
+INFO: 📊 Consultando estado de sensores registrados...
+oct 25, 2025 4:53:10 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade monitorearSensores
+INFO: ✅ Monitoreo general completado.
+oct 25, 2025 4:53:10 P. M. cue.edu.co.app.MainGranja main
+INFO: ✅ --- SIMULACIÓN COMPLETADA ---
