@@ -4,9 +4,19 @@ import cue.edu.co.controladores.ControladorObserver;
 import cue.edu.co.patrones.comportamentales.observer.SensorObserver;
 import cue.edu.co.servicios.ServicioMonitoreo;
 import cue.edu.co.servicios.ServicioRiego;
-
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import cue.edu.co.patrones.comportamentales.strategy.Estacion;
+
+/**
+ * Fachada principal del sistema de la Granja Inteligente.
+ * Proporciona una interfaz única para manejar alimentación, riego y monitoreo.
+ *
+ * Integra varios patrones:
+ *  - Facade → Simplifica el acceso a subsistemas.
+ *  - Observer → Gestiona eventos y sensores.
+ *  - (Preparado para agregar Strategy, State, etc.)
+ */
 
 /**
  * Fachada principal del sistema de la Granja Inteligente.
@@ -83,6 +93,18 @@ public class GranjaFacade {
         if (LOGGER.isLoggable(Level.INFO)) {
             LOGGER.log(Level.INFO, String.format("✅ Alimentación del %s completada.", nombreCorral));
         }
+    }
+
+    public void seleccionarEstrategiaAlimentacion(Estacion estacion) {
+        alimentacion.setEstrategiaPorEstacion(estacion);
+        if (LOGGER.isLoggable(Level.INFO)) {
+            LOGGER.log(Level.INFO, String.format("🎯 Estrategia de alimentación configurada para: %s", estacion));
+        }
+    }
+
+    public void alimentarCorralSegunEstacion(String nombreCorral, Estacion estacion) {
+        seleccionarEstrategiaAlimentacion(estacion);
+        alimentarCorral(nombreCorral);
     }
 
     /**
