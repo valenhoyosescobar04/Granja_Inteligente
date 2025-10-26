@@ -10,6 +10,13 @@ import java.util.logging.Logger;
  * Clase base que representa un animal dentro de la granja inteligente.
  * Cada animal puede ser observado por sensores que reaccionan ante cambios en su estado.
  */
+import cue.edu.co.patrones.comportamentales.state.EstadoSalud;
+import cue.edu.co.patrones.comportamentales.state.EstadoSano;
+
+/**
+ * Clase base que representa un animal dentro de la granja inteligente.
+ * Cada animal puede ser observado por sensores que reaccionan ante cambios en su estado.
+ */
 public abstract class Animal {
 
     private static final Logger LOGGER = Logger.getLogger(Animal.class.getName());
@@ -19,6 +26,7 @@ public abstract class Animal {
     private double peso;
     private String especie;
     private final List<Sensor> sensores; // Sensores asociados a este animal
+    private EstadoSalud estadoSalud;
 
     protected Animal(String nombre, double peso, String especie) {
         this.id = UUID.randomUUID().toString();
@@ -26,6 +34,7 @@ public abstract class Animal {
         this.peso = peso;
         this.especie = especie;
         this.sensores = new ArrayList<>();
+        this.estadoSalud = new EstadoSano();
     }
 
     // Asociación de sensores
@@ -63,6 +72,34 @@ public abstract class Animal {
     // Métodos de utilidad
     public void mostrarInfo() {
         LOGGER.log(Level.INFO, "🐾 Animal: {0} ({1}) - Peso: {2} kg", new Object[]{nombre, especie, peso});
+    }
+
+    // Estado de salud (State)
+    public EstadoSalud getEstadoSalud() {
+        return estadoSalud;
+    }
+
+    public void setEstadoSalud(EstadoSalud estadoSalud) {
+        this.estadoSalud = estadoSalud;
+        notificarSensores("Cambio de estado de salud");
+    }
+
+    public void enfermar() {
+        if (estadoSalud != null) {
+            estadoSalud.enfermar(this);
+        }
+    }
+
+    public void iniciarTratamiento() {
+        if (estadoSalud != null) {
+            estadoSalud.iniciarTratamiento(this);
+        }
+    }
+
+    public void curar() {
+        if (estadoSalud != null) {
+            estadoSalud.curar(this);
+        }
     }
 
     // Getters y setters

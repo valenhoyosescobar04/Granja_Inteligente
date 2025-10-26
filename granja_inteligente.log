@@ -1408,3 +1408,179 @@ oct 26, 2025 3:40:03 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacad
 INFO: ✅ Monitoreo general completado.
 oct 26, 2025 3:40:03 P. M. cue.edu.co.app.MainGranja main
 INFO: ✅ --- SIMULACIÓN COMPLETADA ---
+oct 26, 2025 4:35:14 P. M. cue.edu.co.app.MainGranja main
+INFO: 🐓 --- SIMULACIÓN GRANJA INTELIGENTE ---
+oct 26, 2025 4:35:14 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade <init>
+INFO: 🚜 Iniciando fachada principal de la Granja Inteligente...
+oct 26, 2025 4:35:14 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas <init>
+INFO: 🛰️ Sistema de alertas 'Alertas Generales' inicializado correctamente.
+oct 26, 2025 4:35:14 P. M. cue.edu.co.controladores.ControladorObserver <init>
+INFO: 🛰️ Sistema de alertas 'Alertas Generales' inicializado.
+oct 26, 2025 4:35:14 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas registrarObserver
+INFO: 🛰️ SensorObserver registrado en el sistema Alertas Generales
+oct 26, 2025 4:35:14 P. M. cue.edu.co.controladores.ControladorObserver registrarSensor
+INFO: ✅ Sensor registrado: Peso
+oct 26, 2025 4:35:14 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas registrarObserver
+INFO: 🛰️ SensorObserver registrado en el sistema Alertas Generales
+oct 26, 2025 4:35:14 P. M. cue.edu.co.controladores.ControladorObserver registrarSensor
+INFO: ✅ Sensor registrado: Temperatura
+oct 26, 2025 4:35:14 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas registrarObserver
+INFO: 🛰️ SensorObserver registrado en el sistema Alertas Generales
+oct 26, 2025 4:35:14 P. M. cue.edu.co.controladores.ControladorObserver registrarSensor
+INFO: ✅ Sensor registrado: Humedad
+oct 26, 2025 4:35:14 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade registrarSensoresPorDefecto
+INFO: ✅ Sensores registrados correctamente en el sistema de alertas.
+oct 26, 2025 4:35:14 P. M. cue.edu.co.app.MainGranja main
+INFO: Seleccione animal a alimentar [vaca/pollo/cerdo] (Enter para omitir): 
+oct 26, 2025 4:35:30 P. M. cue.edu.co.app.MainGranja main
+INFO: Seleccione estación [verano/invierno] (Enter para usar propiedades/env): 
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade seleccionarEstrategiaAlimentacion
+INFO: 🎯 Estrategia de alimentación configurada para: VERANO
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade alimentarCorral
+INFO: 🍽️ Iniciando proceso de alimentación para Corral de Vacas
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.estructurales.facade.SubsistemaAlimentacion verificarStock
+INFO: 📦 Verificando stock de alimento...
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.creacionales.singleton.AlimentadorGlobal <init>
+INFO: 📦 AlimentadorGlobal inicializado con stock: 500,00 kg
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.creacionales.singleton.AlimentadorGlobal verificarStock
+INFO: 📊 Stock de alimento disponible: 500,00 kg
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.estructurales.facade.SubsistemaAlimentacion distribuirAlimento
+INFO: 🍽️ Distribuyendo alimento en Corral de Vacas...
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.creacionales.singleton.AlimentadorGlobal distribuirAlimento
+INFO: 🍽️ Distribuidos 50,00 kg en Corral de Vacas. Stock restante: 450,00 kg
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-26T16:35:35.141892300] Alimentación: Se alimentó el corral: Corral de Vacas
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-26T16:35:35.141892300] Alimentación: Se alimentó el corral: Corral de Vacas
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-26T16:35:35.141892300] Alimentación: Se alimentó el corral: Corral de Vacas
+oct 26, 2025 4:35:35 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-26T16:35:35.141892300] Alimentación: Se alimentó el corral: Corral de Vacas
+oct 26, 2025 4:35:35 P. M. cue.edu.co.servicios.ServicioMonitoreo generarAlerta
+WARNING: 🚨 Alerta generada manualmente: Alimentación - Se alimentó el corral: Corral de Vacas
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade alimentarCorral
+INFO: ✅ Alimentación del Corral de Vacas completada.
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade monitorearSensores
+INFO: 📡 Iniciando monitoreo general de sensores...
+oct 26, 2025 4:35:35 P. M. cue.edu.co.servicios.ServicioMonitoreo revisarSensores
+INFO: 👀 Ejecutando revisión general de sensores...
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.comportamentales.observer.SistemaAlertas notificarObservers
+INFO: 📢 Alertas Generales notificando a 3 observadores...
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Peso recibió notificación → [2025-10-26T16:35:35.168598] Monitoreo: Revisión general del sistema completada.
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Temperatura recibió notificación → [2025-10-26T16:35:35.168598] Monitoreo: Revisión general del sistema completada.
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.comportamentales.observer.SensorObserver update
+INFO: ✅ Humedad recibió notificación → [2025-10-26T16:35:35.168598] Monitoreo: Revisión general del sistema completada.
+oct 26, 2025 4:35:35 P. M. cue.edu.co.controladores.ControladorObserver notificarCambio
+INFO: 📡 Evento notificado: [2025-10-26T16:35:35.168598] Monitoreo: Revisión general del sistema completada.
+oct 26, 2025 4:35:35 P. M. cue.edu.co.servicios.ServicioMonitoreo mostrarEstadoSensores
+INFO: 📊 Consultando estado de sensores registrados...
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.estructurales.facade.GranjaFacade monitorearSensores
+INFO: ✅ Monitoreo general completado.
+oct 26, 2025 4:35:35 P. M. cue.edu.co.modelos.Animal mostrarInfo
+INFO: 🐾 Animal: Lola (Vaca) - Peso: 350 kg
+oct 26, 2025 4:35:35 P. M. cue.edu.co.modelos.Vaca emitirSonido
+INFO: Lola hace: Muuu
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.comportamentales.state.EstadoSano emitirSonido
+INFO: El animal Lola emite un sonido enérgico.
+oct 26, 2025 4:35:35 P. M. cue.edu.co.modelos.Vaca alimentarse
+INFO: Lola se acerca al comedero.
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.comportamentales.state.EstadoSano alimentarse
+INFO: El animal Lola se alimenta normalmente.
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.comportamentales.state.EstadoSano enfermar
+INFO: Lola ha enfermado.
+oct 26, 2025 4:35:35 P. M. cue.edu.co.modelos.Animal notificarSensores
+INFO: 📢 Notificación enviada por Lola a 0 sensores → Cambio de estado de salud
+oct 26, 2025 4:35:35 P. M. cue.edu.co.modelos.Vaca emitirSonido
+INFO: Lola hace: Muuu
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.comportamentales.state.EstadoEnfermo emitirSonido
+INFO: El animal Lola emite un sonido débil.
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.comportamentales.state.EstadoEnfermo iniciarTratamiento
+INFO: Lola inicia tratamiento.
+oct 26, 2025 4:35:35 P. M. cue.edu.co.modelos.Animal notificarSensores
+INFO: 📢 Notificación enviada por Lola a 0 sensores → Cambio de estado de salud
+oct 26, 2025 4:35:35 P. M. cue.edu.co.modelos.Vaca alimentarse
+INFO: Lola se acerca al comedero.
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.comportamentales.state.EstadoEnTratamiento alimentarse
+INFO: El animal Lola tiene una dieta controlada por tratamiento.
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.comportamentales.state.EstadoEnTratamiento curar
+INFO: Lola ha completado el tratamiento y está sano.
+oct 26, 2025 4:35:35 P. M. cue.edu.co.modelos.Animal notificarSensores
+INFO: 📢 Notificación enviada por Lola a 0 sensores → Cambio de estado de salud
+oct 26, 2025 4:35:35 P. M. cue.edu.co.modelos.Vaca emitirSonido
+INFO: Lola hace: Muuu
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.comportamentales.state.EstadoSano emitirSonido
+INFO: El animal Lola emite un sonido enérgico.
+oct 26, 2025 4:35:35 P. M. cue.edu.co.modelos.Animal mostrarInfo
+INFO: 🐾 Animal: Pepa (Pollo) - Peso: 2,3 kg
+oct 26, 2025 4:35:35 P. M. cue.edu.co.modelos.Pollo emitirSonido
+INFO: Pepa hace: Cocorocó
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.comportamentales.state.EstadoSano emitirSonido
+INFO: El animal Pepa emite un sonido enérgico.
+oct 26, 2025 4:35:35 P. M. cue.edu.co.modelos.Pollo alimentarse
+INFO: Pepa picotea el alimento.
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.comportamentales.state.EstadoSano alimentarse
+INFO: El animal Pepa se alimenta normalmente.
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.comportamentales.state.EstadoSano enfermar
+INFO: Pepa ha enfermado.
+oct 26, 2025 4:35:35 P. M. cue.edu.co.modelos.Animal notificarSensores
+INFO: 📢 Notificación enviada por Pepa a 0 sensores → Cambio de estado de salud
+oct 26, 2025 4:35:35 P. M. cue.edu.co.modelos.Pollo emitirSonido
+INFO: Pepa hace: Cocorocó
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.comportamentales.state.EstadoEnfermo emitirSonido
+INFO: El animal Pepa emite un sonido débil.
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.comportamentales.state.EstadoEnfermo iniciarTratamiento
+INFO: Pepa inicia tratamiento.
+oct 26, 2025 4:35:35 P. M. cue.edu.co.modelos.Animal notificarSensores
+INFO: 📢 Notificación enviada por Pepa a 0 sensores → Cambio de estado de salud
+oct 26, 2025 4:35:35 P. M. cue.edu.co.modelos.Pollo alimentarse
+INFO: Pepa picotea el alimento.
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.comportamentales.state.EstadoEnTratamiento alimentarse
+INFO: El animal Pepa tiene una dieta controlada por tratamiento.
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.comportamentales.state.EstadoEnTratamiento curar
+INFO: Pepa ha completado el tratamiento y está sano.
+oct 26, 2025 4:35:35 P. M. cue.edu.co.modelos.Animal notificarSensores
+INFO: 📢 Notificación enviada por Pepa a 0 sensores → Cambio de estado de salud
+oct 26, 2025 4:35:35 P. M. cue.edu.co.modelos.Pollo emitirSonido
+INFO: Pepa hace: Cocorocó
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.comportamentales.state.EstadoSano emitirSonido
+INFO: El animal Pepa emite un sonido enérgico.
+oct 26, 2025 4:35:35 P. M. cue.edu.co.modelos.Animal mostrarInfo
+INFO: 🐾 Animal: Toto (Cerdo) - Peso: 120 kg
+oct 26, 2025 4:35:35 P. M. cue.edu.co.modelos.Cerdo emitirSonido
+INFO: Toto hace: Oink
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.comportamentales.state.EstadoSano emitirSonido
+INFO: El animal Toto emite un sonido enérgico.
+oct 26, 2025 4:35:35 P. M. cue.edu.co.modelos.Cerdo alimentarse
+INFO: Toto come en su comedero.
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.comportamentales.state.EstadoSano alimentarse
+INFO: El animal Toto se alimenta normalmente.
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.comportamentales.state.EstadoSano enfermar
+INFO: Toto ha enfermado.
+oct 26, 2025 4:35:35 P. M. cue.edu.co.modelos.Animal notificarSensores
+INFO: 📢 Notificación enviada por Toto a 0 sensores → Cambio de estado de salud
+oct 26, 2025 4:35:35 P. M. cue.edu.co.modelos.Cerdo emitirSonido
+INFO: Toto hace: Oink
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.comportamentales.state.EstadoEnfermo emitirSonido
+INFO: El animal Toto emite un sonido débil.
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.comportamentales.state.EstadoEnfermo iniciarTratamiento
+INFO: Toto inicia tratamiento.
+oct 26, 2025 4:35:35 P. M. cue.edu.co.modelos.Animal notificarSensores
+INFO: 📢 Notificación enviada por Toto a 0 sensores → Cambio de estado de salud
+oct 26, 2025 4:35:35 P. M. cue.edu.co.modelos.Cerdo alimentarse
+INFO: Toto come en su comedero.
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.comportamentales.state.EstadoEnTratamiento alimentarse
+INFO: El animal Toto tiene una dieta controlada por tratamiento.
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.comportamentales.state.EstadoEnTratamiento curar
+INFO: Toto ha completado el tratamiento y está sano.
+oct 26, 2025 4:35:35 P. M. cue.edu.co.modelos.Animal notificarSensores
+INFO: 📢 Notificación enviada por Toto a 0 sensores → Cambio de estado de salud
+oct 26, 2025 4:35:35 P. M. cue.edu.co.modelos.Cerdo emitirSonido
+INFO: Toto hace: Oink
+oct 26, 2025 4:35:35 P. M. cue.edu.co.patrones.comportamentales.state.EstadoSano emitirSonido
+INFO: El animal Toto emite un sonido enérgico.
+oct 26, 2025 4:35:35 P. M. cue.edu.co.app.MainGranja main
+INFO: ✅ --- SIMULACIÓN COMPLETADA ---
