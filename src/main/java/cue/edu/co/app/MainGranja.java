@@ -3,99 +3,127 @@ package cue.edu.co.app;
 import cue.edu.co.config.LoggerConfig;
 import cue.edu.co.patrones.estructurales.facade.GranjaFacade;
 import cue.edu.co.patrones.comportamentales.strategy.Estacion;
+
+// 🐄 Modelos base
 import cue.edu.co.modelos.Vaca;
 import cue.edu.co.modelos.Pollo;
 import cue.edu.co.modelos.Cerdo;
-import java.util.Scanner;
 
+import cue.edu.co.patrones.creacionales.factorymetodo.*;
+import cue.edu.co.patrones.creacionales.builder.*;
+import cue.edu.co.patrones.creacionales.abstractfactory.*;
+
+import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
  * Clase principal que ejecuta la simulación de la Granja Inteligente.
- * Utiliza el patrón *Facade* para orquestar las acciones generales
- * y coordina el comportamiento de los animales según su estado y la estación.
+ * Integra los patrones: Facade, Strategy, State, Factory Method, Builder y Abstract Factory.
  */
 public class MainGranja {
 
-    // Logger para registrar los eventos de la simulación.
     private static final Logger LOGGER = Logger.getLogger(MainGranja.class.getName());
 
     public static void main(String[] args) {
-        // Inicializa la configuración global del logger (colores, formato, niveles, etc.)
+
+        // Configuración inicial del logger
         LoggerConfig.configurar();
+        LOGGER.info("🐓 --- SIMULACIÓN GRANJA INTELIGENTE ---");
 
-        // Mensaje de inicio de la simulación.
-        if (LOGGER.isLoggable(Level.INFO)) {
-            LOGGER.log(Level.INFO, "🐓 --- SIMULACIÓN GRANJA INTELIGENTE ---");
-        }
-
-        // Se crea la fachada que centraliza la lógica principal de la granja.
+        // Crear fachada principal
         GranjaFacade fachada = new GranjaFacade();
 
-        // Variables para guardar los datos ingresados por el usuario.
         String animal;
         String estacionInput;
 
-        // Se utiliza un Scanner para recibir datos desde consola.
         try (Scanner sc = new Scanner(System.in)) {
-            // Se pide al usuario que seleccione un animal para alimentar.
-            if (LOGGER.isLoggable(Level.INFO)) {
-                LOGGER.log(Level.INFO, "Seleccione animal a alimentar [vaca/pollo/cerdo] (Enter para omitir): ");
-            }
+            LOGGER.info("Seleccione animal a alimentar [vaca/pollo/cerdo] (Enter para omitir): ");
             animal = sc.nextLine();
-
-            // Se pide al usuario que seleccione una estación del año.
-            if (LOGGER.isLoggable(Level.INFO)) {
-                LOGGER.log(Level.INFO, "Seleccione estación [verano/invierno] (Enter para usar propiedades/env): ");
-            }
+            LOGGER.info("Seleccione estación [verano/invierno] (Enter para usar propiedades/env): ");
             estacionInput = sc.nextLine();
         }
 
-        // Se busca una configuración de estación desde propiedades del sistema o variables de entorno.
+        // Determinar estación (entrada, variable de entorno o sistema)
         String estacionProp = System.getProperty("estacion");
         if (estacionProp == null || estacionProp.isBlank()) {
             estacionProp = System.getenv("ESTACION");
         }
 
-        // Por defecto se usa la estación VERANO.
         Estacion est = Estacion.VERANO;
+        String criterioEstacion = estacionInput != null && !estacionInput.isBlank()
+                ? estacionInput
+                : estacionProp;
 
-        // Determina el criterio de estación, priorizando la entrada del usuario.
-        String criterioEstacion = estacionInput;
-        if (criterioEstacion == null || criterioEstacion.isBlank()) {
-            criterioEstacion = estacionProp;
-        }
-
-        // Evalúa el valor ingresado o configurado y asigna la estación correspondiente.
         if (criterioEstacion != null) {
             switch (criterioEstacion.trim().toUpperCase()) {
                 case "INVIERNO":
                     est = Estacion.INVIERNO;
                     break;
                 case "VERANO":
-                    est = Estacion.VERANO;
-                    break;
                 default:
                     est = Estacion.VERANO;
                     break;
             }
         }
 
-        // Si el usuario especificó un animal, se alimenta su corral según la estación.
+        // ==============================================================
+        // 🧩 PATRONES CREACIONALES
+        // ==============================================================
+
+        // 🏭 FACTORY METHOD → crear animales según selección del usuario
         if (animal != null && !animal.isBlank()) {
+            AnimalFactory factory;
+            switch (animal.trim().toLowerCase()) {
+                case "vaca":
+                    factory = new VacaFactory();
+                    break;
+                case "cerdo":
+                    factory = new CerdoFactory();
+                    break;
+                default:
+                    factory = new VacaFactory();
+                    break;
+            }
+
+            cue.edu.co.patrones.creacionales.factorymetodo.Animal animalCreado = factory.crearAnimal();
+            animalCreado.alimentar();
+
+            // 🧱 BUILDER → construir un animal personalizado
+            AnimalPersonalizado personalizado = new AnimalBuilder()
+                    .tipo(animalCreado.getClass().getSimpleName())
+                    .edad((int) (Math.random() * 10 + 1))
+                    .peso(Math.random() * 500)
+                    .historial("Vacunado, sensor IoT activo.")
+                    .build();
+            personalizado.mostrarInfo();
+
+            // 🏗️ ABSTRACT FACTORY → crear familias de objetos coherentes
+            GranjaFactory granjaFactory;
+            if (animal.equalsIgnoreCase("vaca")) {
+                granjaFactory = new GranjaLecheraFactory();
+            } else {
+                granjaFactory = new GranjaPorcinaFactory();
+            }
+
+            cue.edu.co.patrones.creacionales.abstractfactory.Animal afAnimal = granjaFactory.crearAnimal();
+            Alimento afAlimento = granjaFactory.crearAlimento();
+            Entorno afEntorno = granjaFactory.crearEntorno();
+
+            afAnimal.mostrarInfo();
+            afAlimento.mostrarInfo();
+            afEntorno.mostrarInfo();
+
+            // 🧩 FACADE → rutina combinada
             String corral;
             switch (animal.trim().toLowerCase()) {
                 case "vaca":
-                case "vacas":
                     corral = "Corral de Vacas";
                     break;
                 case "pollo":
-                case "pollos":
                     corral = "Corral de Pollos";
                     break;
                 case "cerdo":
-                case "cerdos":
                     corral = "Corral de Cerdos";
                     break;
                 default:
@@ -103,20 +131,19 @@ public class MainGranja {
                     break;
             }
 
-            // Se ejecutan las acciones del patrón Facade: alimentar y monitorear.
             fachada.alimentarCorralSegunEstacion(corral, est);
             fachada.monitorearSensores();
 
         } else {
-            // Si no se especificó animal, se aplica una rutina general para toda la granja.
             fachada.seleccionarEstrategiaAlimentacion(est);
             fachada.ejecutarRutinaDiaria();
         }
 
-        // ---------------- DEMOSTRACIÓN DE FUNCIONALIDADES ----------------
-        // A continuación se crean instancias de animales para simular sus estados y acciones.
+        // ==============================================================
+        // 🧪 DEMOSTRACIÓN DE ESTADOS Y ESTRATEGIAS
+        // ==============================================================
 
-        // 🐄 Simulación con una vaca
+        // 🐄 Vaca
         Vaca demo = new Vaca("Lola", 350.0);
         demo.mostrarInfo();
         demo.emitirSonido();
@@ -128,7 +155,7 @@ public class MainGranja {
         demo.curar();
         demo.emitirSonido();
 
-        // 🐔 Simulación con un pollo
+        // 🐔 Pollo
         Pollo demoPollo = new Pollo("Pepa", 2.3);
         demoPollo.mostrarInfo();
         demoPollo.emitirSonido();
@@ -140,7 +167,7 @@ public class MainGranja {
         demoPollo.curar();
         demoPollo.emitirSonido();
 
-        // 🐖 Simulación con un cerdo
+        // 🐖 Cerdo
         Cerdo demoCerdo = new Cerdo("Toto", 120.0);
         demoCerdo.mostrarInfo();
         demoCerdo.emitirSonido();
@@ -152,9 +179,6 @@ public class MainGranja {
         demoCerdo.curar();
         demoCerdo.emitirSonido();
 
-        // Mensaje final de cierre de simulación.
-        if (LOGGER.isLoggable(Level.INFO)) {
-            LOGGER.log(Level.INFO, "✅ --- SIMULACIÓN COMPLETADA ---");
-        }
+        LOGGER.log(Level.INFO, "✅ --- SIMULACIÓN COMPLETADA ---");
     }
 }
